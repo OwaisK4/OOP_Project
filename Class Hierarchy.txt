@@ -1,0 +1,23 @@
+Hospital:
+	Personnel:
+		Functions:
+			Firing, Hiring (To be overridden for each subclass)
+		Doctors
+		Nurses
+		Support Staff
+	Patients:
+		Functions:
+			Admit, Discharge (To be overridden for each subclass)
+		Appointments:
+		Functions:
+			Schedule/Cancel appointments (Use ctime for timestamp)
+			Regular appointments
+			Covid checkup
+		Covid patients
+		General Patients
+	Billing:
+		Credit card
+		Cash
+
+Encryption:
+	Use MD5/SHA1 hashing and Blowfish encryption scheme
