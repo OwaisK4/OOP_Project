@@ -102,10 +102,7 @@ class Doctor : public Personnel{
 		char specialization[50];
 	public:
 		static int doctor_count;
-//		friend void validate_int(string message, int &var);
 		void hire(){
-//		char name[60], phone_number[30], email[50], DOB[30];
-//		int age;
 			system("cls");
 			string temp;
 //			flush();

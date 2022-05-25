@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(){
-//	cout << "Hello World";
 	int age;
 	cout << "Enter age: ";
 	cin >> age;
