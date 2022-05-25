@@ -17,7 +17,7 @@ void flush();
 class Hospital{
 	private:
 		string Hospital_name;
-		string passwords[TOTAL_PASSWORDS] = {"owais3298", "saad3267", "fahad4926"};
+		string passwords[TOTAL_PASSWORDS] = {"admin123", "dr123", "patient123"};
 	public:
 		static int authorization;
 		void authenticate(){
@@ -305,6 +305,7 @@ class Bill{
 		int charges[5] = {750000, 250000, 30000, 200000, 60000};
 		int charge = 10000;
 		void calculate_bill(char *disease){
+			charge = 10000;
 			for (int i=0; i<5; i++){
 				if (strcmp(disease, diseases[i]) == 0){
 					charge = charges[i];
@@ -526,8 +527,6 @@ class Patient : public Person{
 			}
 			system("CLS");
 			cout<<"Did you traveled abroad recetly or returned from another country in the last 14 days\nIf yes select 1 otherwise select 2"<<endl;
-			cout<<" : ";cin>>ans;
-			validate_int("Enter choice: ", ans);
 			if (ans == 1){
 				positivity++;
 			}
@@ -610,15 +609,15 @@ class Appointment{
 		Patient patient;
 	public:
 		static int appointment_number;
-		Appointment(){
-			fstream fin("Appointments.dat", ios::binary | ios::in);
-			fin.seekg(0, ios::end);
-			int file_size = fin.tellg();
-//			cout << "\nTotal file size of Appointments.dat is: " << file_size;
-//			cout << "\nNumber of appointments is: " << appointment_number;
-			appointment_number = file_size / sizeof(*this);
-			fin.close();
-		}
+//		Appointment(){
+//			fstream fin("Appointments.dat", ios::binary | ios::in);
+//			fin.seekg(0, ios::end);
+//			int file_size = fin.tellg();
+////			cout << "\nTotal file size of Appointments.dat is: " << file_size;
+////			cout << "\nNumber of appointments is: " << appointment_number;
+//			appointment_number = file_size / sizeof(*this);
+//			fin.close();
+//		}
 		~Appointment(){}
 		
 		void schedule_appointment(){

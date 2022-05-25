@@ -14,6 +14,12 @@ int main(){
 	system("cls");
 	printf("\n\n\t\t\tWELCOME TO HOSPITAL MANAGEMENT SYSTEM\n");
 	h.authenticate();
+//	printf("LOADING");
+//		for(int h=0;h<=10;h++){
+//			printf(" . ");
+//			for(int g=0;g<=100000000;g++){
+//			}
+//		}
 	cout << "\nAuthorization level: " << h.authorization << "\n";
 	do{
 		cout << "\nPress:\n1 for Patient functions\n";
@@ -142,23 +148,3 @@ int main(){
 	return 0;
 }
 
-//int main(){	
-//	Hospital h;
-////	h.authenticate();
-//	Hospital h;
-//	Doctor doctor;
-//	Patient patient;
-//	Appointment appoint;
-//	Doctor doctor;
-//	Patient patient;
-//	Appointment appoint;
-////	doctor.hire();
-////	doctor.display();
-////	doctor.fire();
-////	patient.admit();
-//	patient.display();
-////	appoint.schedule_appointment();
-////	appoint.display();
-////	appoint.cancel();
-//	return 0;
-//}
